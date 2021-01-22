@@ -1,6 +1,7 @@
 
 <!doctype html>
 <html lang="en">
+{% load static %}
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -55,7 +56,7 @@
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="#">About me</a>
+          <a class="nav-link" href="{% static 'AboutMe.txt' %}">About me</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Facebook</a>
@@ -78,6 +79,7 @@
         <p>
           <a href="mailto:grom311@yandex.ru" class="btn btn-primary my-2">Mail me</a>
         </p>
+          <img src="{% static 'IMG_20160319_005731.jpg' %}" height=300 width="300" class="img-fluid"/>
       </div>
     </div>
   </section>
