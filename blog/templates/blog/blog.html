@@ -73,13 +73,13 @@
 
     <h1 class="pt-4 pb-5">Recent Posts</h1>
     {% for post in posts.all %}
-        <h2>{{ post.event_title }}</h2>
+        <a href=""> <h2>{{ post.event_title }}</h2></a>
         <br/>
         <img src="{{ post.event_image.url }}" height=300 width="300" class="img-fluid"/>
         {{ post.event_image }}
         <p>{{ post.event_date }}</p>
         <br/>
-        {{ post.event_text }}
+        {{ post.get_summary }}
         <br/>
         <br/>
     {% endfor %}
